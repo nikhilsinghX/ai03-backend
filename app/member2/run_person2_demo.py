@@ -6,9 +6,9 @@ This calls the configured LLM several times and may use API quota.
 """
 import json
 
-from analyzer import analyze_answer
-from assessor import assess_interview
-from pipeline import extract_requirements, generate_rubric, plan_questions
+from .analyzer import analyze_answer
+from .assessor import assess_interview
+from .pipeline import extract_requirements, generate_rubric, plan_questions
 
 SAMPLE_JD = """
 Role: AI/ML Intern

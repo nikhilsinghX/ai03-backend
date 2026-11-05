@@ -1,0 +1,41 @@
+{
+  "note": "All fictional. Cycled if the interview asks more questions than there are answers.",
+  "strong": [
+    "I built a resume screening classifier with scikit-learn. I cleaned about two thousand fictional resumes, wrote the feature extraction myself, and improved test accuracy from seventy one to seventy eight percent by balancing the classes.",
+    "For a small dataset I would start with logistic regression because it overfits less and is easy to explain. I would only move to a bigger model if cross validation showed a clear gain and I could explain the extra complexity.",
+    "If accuracy dropped on new data I would first check for data drift by comparing feature distributions, then look at label quality, and finally retrain on recent samples while keeping a held out set to confirm the fix worked.",
+    "Overfitting is like memorising last year's exam answers instead of learning the subject. The model does great on examples it has seen but fails on new questions, so we test it on data it has never seen.",
+    "In our hackathon I split the work into data, model and demo, held a short daily check in, and when a teammate was blocked on deployment I paired with them for an hour so we shipped on time.",
+    "I learned PyTorch in two weeks for the document search project by rebuilding a tutorial model, then I explained the design choices and the trade offs to my team in a short demo.",
+    "The hardest decision was choosing embeddings over keyword search. I compared both on fifty test queries, found embeddings answered forty one correctly against thirty one, and I would add a reranker if I did it again."
+  ],
+  "average": [
+    "I made a recommendation notebook using pandas and it gave some decent suggestions for movies",
+    "I would try a simple model first and then check the results on test data",
+    "I would look at the data again and see if anything changed in it recently",
+    "It means the model learns the training data too much and then does not work on new data",
+    "In the coding club we divided tasks and helped each other whenever someone was stuck",
+    "I learned a library by watching tutorials and then using it in a small project"
+  ],
+  "vague": [
+    "I made a project.",
+    "It was okay I think.",
+    "I used some model for it.",
+    "We just did it together.",
+    "It worked fine in the end.",
+    "I do not remember much."
+  ],
+  "evasive": [
+    "Lots of things.",
+    "Not really relevant.",
+    "Maybe later.",
+    "Hard to say.",
+    "Whatever works."
+  ],
+  "idk": [
+    "I don't know.",
+    "No idea about that.",
+    "I am not sure.",
+    "I don't remember."
+  ]
+}

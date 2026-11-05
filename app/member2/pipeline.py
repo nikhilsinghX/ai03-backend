@@ -8,8 +8,8 @@ import json
 from typing import Any
 
 from .llm_adapter import generate_json
-from prompts import P1_EXTRACTOR_SYSTEM, P2_RUBRIC_SYSTEM, P3_QUESTION_PLANNER_SYSTEM
-from schemas import validate_requirements, validate_rubric, validate_question_plan
+from .prompts import P1_EXTRACTOR_SYSTEM, P2_RUBRIC_SYSTEM, P3_QUESTION_PLANNER_SYSTEM
+from .schemas import validate_requirements, validate_rubric, validate_question_plan
 
 
 def extract_requirements(jd_text: str, resume_text: str = "") -> dict:

@@ -1,0 +1,27 @@
+HOW TO START INTERVIEWLENS (one server, port 8000)
+==================================================
+
+WINDOWS (easiest)
+  1. Extract the zip to a normal folder, e.g. D:\InterviewLens
+  2. Double-click  run-backend.bat   (first run installs packages, takes ~1-2 minutes)
+  3. Open Chrome and go to  http://127.0.0.1:8000
+
+WINDOWS (manual, PowerShell, inside the ai03-backend folder)
+  python -m venv .venv
+  .venv\Scripts\Activate.ps1
+  pip install -r requirements.txt
+  python run.py
+
+MAC / LINUX
+  ./run.sh          (or: cd ai03-backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python run.py)
+
+STOP the server: press Ctrl + C in the terminal.
+
+REAL AI MODEL (optional)
+  Copy ai03-backend/.env.example to ai03-backend/.env and fill ONE key (Anthropic, Groq or OpenAI).
+  Without a key the app runs in demo (mock) mode: the flow works, but scores are placeholders.
+
+CHECK EVERYTHING WORKS
+  cd ai03-backend  (venv active)
+  python -m pytest -q
+  python scripts/run_scenarios.py        (writes docs/results.md)

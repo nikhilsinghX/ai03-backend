@@ -1,9 +1,7 @@
-.venv/
-**/.venv/
 .env
-.env.*
-!.env.example
 __pycache__/
-.pytest_cache/
-*.py[cod]
+*.pyc
+.venv/
+data/
 *.db
+.deps-installed

@@ -13,7 +13,7 @@ if not exist .deps-installed (
   echo installed> .deps-installed
 )
 if not exist .env copy .env.example .env >nul
-uvicorn app.main:app --host 127.0.0.1 --port 8000
+python run.py
  goto end
 :error
 echo Setup failed. Ensure Python 3.10+ is installed and available as 'python'.

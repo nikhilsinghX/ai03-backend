@@ -1,0 +1,31 @@
+{
+  "strong": {
+    "resume": "strong",
+    "max_followups": 0,
+    "min_followups": 0,
+    "null_scores": 0,
+    "note": "Long specific answers: no follow-ups, every criterion scored with a verified quote."
+  },
+  "average": {
+    "resume": "average",
+    "min_followups": 1,
+    "note": "Short answers without outcomes: follow-ups expected."
+  },
+  "vague": {
+    "resume": "mismatch",
+    "min_followups": 2,
+    "note": "Vague answers: follow-ups, never more than 2 per question."
+  },
+  "evasive": {
+    "resume": "mismatch",
+    "rephrase_expected": true,
+    "note": "Off-topic answers: one polite rephrase, then move on."
+  },
+  "idk": {
+    "resume": "average",
+    "max_followups": 0,
+    "all_null": true,
+    "review_expected": true,
+    "note": "'I don't know': no follow-up, gap flagged for the human."
+  }
+}
